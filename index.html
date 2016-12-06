@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <title>CSS-test</title>
+
+</head>
+<body>
+    <main>
+        <section>
+                Rouge: <label id="lb1" for="rgb1">0</label>
+                <input onchange="myRange();changeColor();generateCode()" type="range" id="rgb1" name="rgb1" value="255" min="0" max="255"/>
+                Vert: <label id="lb2" for="rgb2">0</label>
+                <input onchange="myRange();changeColor();generateCode()" type="range" id="rgb2" name="rgb2" value="255" min="0" max="255"/>
+                Bleu: <label id="lb3" for="rgb3">0</label>
+                <input onchange="myRange();changeColor();generateCode()" type="range" id="rgb3" name="rgb3" value="255" min="0" max="255"/>
+                Opacité: <label id="lb4" for="rgb4">0</label>
+                <input onchange="myRange();changeColor();generateCode()" type="range" id="rgb4" name="rgb4" value="1" min="0" max="1" step="0.1"/>
+                <!-- Input type color qui negate tout mon js x)
+                <input type="color"/> -->
+        </section>
+        <section id="showMe">
+
+        </section>
+        <section id="showMeCode">
+
+        </section>
+    </main>
+    <script type="text/javascript" src="horscontexte.js"></script>
+</body>
+</html>
