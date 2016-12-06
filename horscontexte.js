@@ -2,29 +2,16 @@
 myRange();
 
 function changeColor() {
-
-    // Get value of input type range (again)
-    var range1 = document.getElementById("rgb1").value;
-    var range2 = document.getElementById("rgb2").value;
-    var range3 = document.getElementById("rgb3").value;
-    var range4 = document.getElementById("rgb4").value;
-
-    // Change the background color of the second <section> with the rgba value of range input
+        // Change the background color of the second <section> with the rgba value of range input
     document.getElementById('showMe').style.background = "rgba(" + range1 + "," + range2 + "," + range3 +"," + range4 + ")";
 }
 
 function generateCode() {
-
-    var range1 = document.getElementById("rgb1").value;
-    var range2 = document.getElementById("rgb2").value;
-    var range3 = document.getElementById("rgb3").value;
-    var range4 = document.getElementById("rgb4").value;
-
+        // Change html of the third <section> with the css code of a background-color change with rgba value
     document.getElementById('showMeCode').innerHTML= "background-color: rgba(" + range1 + "," + range2 + "," + range3 +"," + range4 + ")";
 }
 
 function myRange() {
-
     // Get value of input type range
     var range1 = document.getElementById("rgb1").value;
     var range2 = document.getElementById("rgb2").value;
